@@ -1,0 +1,20 @@
+Multi-website advertisement agent 
+  1) Participant for website advertisement
+	a) advertisers
+	b) publisher
+	c) advertizing broker(optional)
+  2) Should Focus on two subject
+	a) scheduling
+	- In which time, we have to show ads.
+	b) Personalization
+	- Each person should feel ads made for me. 
+  * Our aim
+	To maximize total click through-rate.
+   
+  *Factor that effect personalized web advertising
+   1) Content of both publisher's page and advertisers.
+   2) Historival behavior of user, bahavior of currrent user
+   3) Recently exposed advertisements and advertising feature
+   4) advertising feature.
+   5) behavior of user.
+	
