@@ -19,5 +19,8 @@ Multi-website advertisement agent
    4) advertising feature.
    5) behavior of user.
 
-  
+  Yesterday working report
+research on 
+1) web mining 
+   web content minig
 	
