@@ -22,5 +22,43 @@ Multi-website advertisement agent
   Yesterday working report
 research on 
 1) web mining 
-   web content minig
+   I) web content minig
+   
+   II) web usage mining
+	automatic discovery of pattern in clickstream
+	
+	3 stages:
+	1) Data collection and preprocessing
+	2) pattern discovery
+	3) pattern analysis
+
+	* Data preprocessing
+	   a) Data cleaning
+	   b) pageview identification
+	   c) sessionizatin
+	   d) Data transformation
+		i) Data integration
+		ii) Data aggregation
+		iii) Data generalizatioin
+
+Source of Data
+1) Web server log file(ip, resource name, browser, os, refered field)
+2) Application server logs
+
+We obtain four type of data
+1) usage data(primary source of data)
+   - count the number of times hit the website
+   - collected automatically
+2) content data
+   - Data available in website
+   - eg:- text, image, video
+3) structured data
+   - Desiginer's view of the content organization within the site
+4) User data
+   - user profile information
+	demographic information
+	user rating
+	past purchases and visit histories
+	other explicit or implicit representation of user interests
+
 	
