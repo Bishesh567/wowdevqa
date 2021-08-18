@@ -22,9 +22,9 @@ Multi-website advertisement agent
   Yesterday working report
 research on 
 1) web mining 
-   I) web content minig
    
-   II) web usage mining
+   
+   I) web usage mining
 	automatic discovery of pattern in clickstream
 	
 	3 stages:
@@ -60,5 +60,18 @@ We obtain four type of data
 	user rating
 	past purchases and visit histories
 	other explicit or implicit representation of user interests
+
+	II) web content minig
+	    primary task - data extraction, structure data is extracted from unstructure website
+	    To facilitate data aggregation over various website by using extracted structred data.
+	    Content may consist of text, image, audio, video or structured record, such as list and table
+	    For text mining, use use beautiful soup module to extract text from HTML/ XML file.
+	    This data are tokenized by using nltk module and then further processes are done.
+	    
+	    operation performed 
+		text mining 
+		image scraping
+			
+
 
 	
