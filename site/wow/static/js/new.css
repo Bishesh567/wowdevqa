@@ -1,0 +1,38 @@
+ <style>
+            body{
+
+                background-image: url("{% static 'image/sale.jpg' %}");
+
+                background-attachment: fixed;
+                background-origin: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+               .front{
+
+                    height: 30px;
+                    width: 100%;
+                    text-align: center;
+                    text-shadow: 3px 1px black;
+                    color: fuchsia;
+                    text-emphasis-position: above;
+
+                  }
+
+            .second{
+                     height: 30px;
+                     position: fixed;
+                     width: 100%;
+                     padding: 0px;
+                     background-color: bisque;
+
+                    }
+            table{
+                     width: 100%;
+                     padding: 5px;
+
+
+                   }
+
+
+        </style>
