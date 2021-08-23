@@ -1,0 +1,37 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-image: url("{% static 'image/ads.jpg' %}");
+             }
+
+             div{
+                position: fixed;
+                top:100px;
+                left:400px;
+                color:blue;
+                padding: 20px;
+                background-color: lightgray;
+
+             }
+
+        </style>
+
+
+    </head>
+    <body>
+    <div>
+        <form name="val" method="POST" action="sign">
+
+
+        Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="email" name="email" placeholder="rana.bishesh.5@gmail.com" required><br><br>
+
+         Password:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="password" name = 'pass' maxlength="25" minlength="8" required>   <br><br>
+
+       <input type="submit" name="submit" onclick="valid()">
+    </form>
+    </div>
+    </body>
+</html>

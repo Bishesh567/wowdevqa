@@ -1,17 +1,11 @@
  <style>
-            body{
 
-                background-image: url("{% static 'image/sale.jpg' %}");
 
-                background-attachment: fixed;
-                background-origin: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
                .front{
 
                     height: 30px;
                     width: 100%;
+                    position: fixed;
                     text-align: center;
                     text-shadow: 3px 1px black;
                     color: fuchsia;
@@ -19,10 +13,13 @@
 
                   }
 
-            .second{
+            div.second{
                      height: 30px;
                      position: fixed;
-                     width: 100%;
+                     right: 0px;
+                     width: 60%;
+                     float: right;
+                     top: 70px;
                      padding: 0px;
                      background-color: bisque;
 
@@ -33,6 +30,33 @@
 
 
                    }
+            div.logo{
 
+             float: left;
+            }
+
+            img{
+                top: 70px;
+                position: fixed;
+                width: 200px;
+                height: 100px;
+            }
+            .para{
+                position: absolute;
+                text-align: justify;
+                color: green;
+                padding: 15px;
+                background-color: lightblue;
+                top: 250px;
+                width: 500px;
+            }
+
+            .pra{
+            background-color: lightgreen;
+            position: absolute;
+            top: 1000px;
+            height: 500px;
+            width: 30%;
+            }
 
         </style>
