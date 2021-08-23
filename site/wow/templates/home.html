@@ -7,14 +7,14 @@
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
         <title>{% block title%}Home page{% endblock title%}</title>
 
-    <link
+   <!-- <link
     rel="stylesheet"
     type="text/css"
     href = "{% static 'js/new.css' %}">
+    -->
 
-    <style>
-    {% block style%}
-        body{
+     <style>
+                 body{
                 background-image: url("{% static 'image/sale.jpg' %}");
                 background-attachment: fixed;
                 background-origin: center;
@@ -22,8 +22,68 @@
                 min-height: 100%;
                 background-size: cover;
                 }
-    </style>
-    {% endblock style%}
+
+
+               .front{
+
+                    height: 30px;
+                    width: 100%;
+                    position: fixed;
+                    text-align: center;
+                    text-shadow: 3px 1px black;
+                    color: fuchsia;
+                    text-emphasis-position: above;
+
+                  }
+
+            div.second{
+                     height: 30px;
+                     position: fixed;
+                     right: 0px;
+                     width: 60%;
+                     float: right;
+                     top: 70px;
+                     padding: 0px;
+                     background-color: bisque;
+
+                    }
+            table{
+                     width: 100%;
+                     padding: 5px;
+
+
+                   }
+            div.logo{
+
+             float: left;
+            }
+
+            img{
+                top: 70px;
+                position: fixed;
+                width: 200px;
+                height: 100px;
+            }
+            .para{
+                position: absolute;
+                text-align: justify;
+                color: green;
+                padding: 15px;
+                background-color: lightblue;
+                top: 250px;
+                width: 500px;
+            }
+
+            .pra{
+            background-color: lightgreen;
+            position: absolute;
+            top: 1000px;
+            height: 500px;
+            width: 30%;
+            }
+
+        </style>
+
 
     </head>
     <body> 
