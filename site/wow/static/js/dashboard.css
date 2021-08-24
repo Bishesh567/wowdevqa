@@ -1,5 +1,5 @@
 body{
-    background-image: url("/static/image/sale.jpg");
+    background-image: url("/static/image/dash.jpg");
     background-attachment: fixed;
     background-origin: center;
     background-repeat: no-repeat;
@@ -24,7 +24,7 @@ div.second{
            height: 30px;
            position: fixed;
            right: 0px;
-           width: 60%;
+           width: 85%;
            float: right;
            top: 70px;
            padding: 0px;
@@ -50,22 +50,5 @@ img{
     }
 
 
-    .para{
-          position: absolute;
-          text-align: justify;
-          color: green;
-          padding: 15px;
-          background-color: lightblue;
-          top: 250px;
-          width: 500px;
-          }
-
-.pra{
-     background-color: lightgreen;
-     position: absolute;
-     top: 1000px;
-     height: 500px;
-     width: 30%;
-     }
 
 

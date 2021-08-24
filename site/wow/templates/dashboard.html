@@ -6,7 +6,7 @@
         <link
             rel="stylesheet"
             type="text/css"
-            href = "{% static 'js/login.css' %}">
+            href = "{% static 'js/dashboard.css' %}">
 
     </head>
     <body>
@@ -36,16 +36,6 @@
         </div>
 
 
-    <div class="form"  >
-        <form name="val" method="POST" action="dashboard">
-             {% csrf_token %}
 
-        Email:<input type="email" name="email" placeholder="rana.bishesh.5@gmail.com" required><br><br>
-
-         Password:<input type="password" name = 'pass' maxlength="25" minlength="8" required>   <br><br>
-
-       <input class="sub" type="submit" name="submit" onclick="valid()">
-    </form>
-    </div>
     </body>
 </html>

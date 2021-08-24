@@ -1,89 +1,15 @@
 {% load static %}
 
-
-
 <!DOCTYPE html>
-<!-- saved from url=(0045)file:///C:/Users/User/Desktop/club%20web.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
         <title>{% block title%}Home page{% endblock title%}</title>
 
-   <!-- <link
-    rel="stylesheet"
-    type="text/css"
-    href = "{% static 'js/new.css' %}">
-    -->
-
-     <style>
-                 body{
-                background-image: url("{% static 'image/sale.jpg' %}");
-                background-attachment: fixed;
-                background-origin: center;
-                background-repeat: no-repeat;
-                min-height: 100%;
-                background-size: cover;
-                }
-
-
-               .front{
-
-                    height: 30px;
-                    width: 100%;
-                    position: fixed;
-                    text-align: center;
-                    text-shadow: 3px 1px black;
-                    color: fuchsia;
-                    text-emphasis-position: above;
-
-                  }
-
-            div.second{
-                     height: 30px;
-                     position: fixed;
-                     right: 0px;
-                     width: 60%;
-                     float: right;
-                     top: 70px;
-                     padding: 0px;
-                     background-color: bisque;
-
-                    }
-            table{
-                     width: 100%;
-                     padding: 5px;
-
-
-                   }
-            div.logo{
-
-             float: left;
-            }
-
-            img{
-                top: 70px;
-                position: fixed;
-                width: 200px;
-                height: 100px;
-            }
-            .para{
-                position: absolute;
-                text-align: justify;
-                color: green;
-                padding: 15px;
-                background-color: lightblue;
-                top: 250px;
-                width: 500px;
-            }
-
-            .pra{
-            background-color: lightgreen;
-            position: absolute;
-            top: 1000px;
-            height: 500px;
-            width: 30%;
-            }
-
-        </style>
-
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href = "{% static 'js/new.css' %}">
 
     </head>
     <body> 
@@ -91,13 +17,13 @@
         <nav class="front">
             <h1>MULTI-WEBSITE ADVERTISEMENT AGENT</h1>
         </nav>
-        <div>
 
-        <div class = 'logo'>
-            <img src="{% static 'image/logo.png'%}"  ></img>
-        </div>
-        
-          <div class="second">
+        <div>
+            <div class = 'logo'>
+                <img src="{% static 'image/logo.png'%}"  >
+            </div>
+
+            <div class="second">
               <table>
                   <tr>
                       <th><a href="http://127.0.0.1:8000"><u>Home</u></a></th>
@@ -110,9 +36,10 @@
                     
                   </tr>
               </table>
+            </div>
         </div>
-        </div>
-{% block paragraph %}
+
+
         <div class="para">
                <p> One of the biggest benefits of online marketing is that it is cos effective. Digital marketing helps you
                    save money and obtain more leads. With traditional marketing methods, it's difficult for small to
@@ -123,6 +50,6 @@
         <div class="pra">
 
         </div>
-    {% endblock paragraph%}
+
 </body>
 </html>

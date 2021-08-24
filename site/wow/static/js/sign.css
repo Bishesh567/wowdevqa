@@ -1,5 +1,5 @@
-body{
-    background-image: url("/static/image/sale.jpg");
+ body{
+    background-image: url("/static/image/sign.jpg");
     background-attachment: fixed;
     background-origin: center;
     background-repeat: no-repeat;
@@ -24,7 +24,7 @@ div.second{
            height: 30px;
            position: fixed;
            right: 0px;
-           width: 60%;
+           width: 85%;
            float: right;
            top: 70px;
            padding: 0px;
@@ -49,23 +49,26 @@ img{
     height: 100px;
     }
 
+div.form{
+    position: fixed;
+    top:150px;
+    left:400px;
+    width: 30%;
+    height: 330px;
+    color:blue;
+    padding: 10px 100px;
+    backface-visibility: visible;
+    background-color: lightgray;
+    backgrond-
+    }
 
-    .para{
-          position: absolute;
-          text-align: justify;
-          color: green;
-          padding: 15px;
-          background-color: lightblue;
-          top: 250px;
-          width: 500px;
-          }
+input{
+      position: fixed;
+      left: 650px;
+}
 
-.pra{
-     background-color: lightgreen;
-     position: absolute;
-     top: 1000px;
-     height: 500px;
-     width: 30%;
-     }
+input.sub{
+          position:fixed;
+          left:550px;
 
-
+}

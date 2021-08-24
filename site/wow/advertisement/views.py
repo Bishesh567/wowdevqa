@@ -9,4 +9,17 @@ def sign(request):
     return render(request, 'sign.html')
 
 def log(request):
+    name = request.POST['FirstName']
+    sur_name = request.POST['lastName']
+    age = request.POST['age']
+    email = request.POST['email']
+    password = request.POST['pass']
+    gender = request.POST['sex']
+    print(name,sur_name,age,email,password,gender)
+
+
     return render(request, 'login.html')
+
+def dashboard(request):
+
+    return render(request, 'dashboard.html')

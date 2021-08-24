@@ -5,25 +5,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style>
-            body{
-                background-image: url("{% static 'image/ads.jpg' %}");
-             }
-
-             div{
-                position: fixed;
-                top:100px;
-                left:400px;
-                color:blue;
-                padding: 20px;
-                background-color: lightgray;
-
-             }
-
-        </style>
-
-         <script>
-            function valid()
+        <link rel="stylesheet" type="text/css" href="{% static 'js/sign.css'%}">
+        <script>
+             function valid()
             {
                 var a = document.validation.FirstName.value;
                 if(a = "" || a.length <= 3 || a.length >= 20)
@@ -39,39 +23,58 @@
                     alert("Password didn't match");
                     return false;
                 }
-
-
-
             }
         </script>
 
+
+
     </head>
     <body>
-    <div>
-        <form name="validation" method="POST" action="sign">
+
+    <nav class="front">
+            <h1>MULTI-WEBSITE ADVERTISEMENT AGENT</h1>
+    </nav>
+
+     <div>
+            <div class = 'logo'>
+                <img src="{% static 'image/logo.png'%}"  >
+            </div>
+
+            <div class="second">
+              <table>
+                  <tr>
+                      <th><a href="http://127.0.0.1:8000"><u>Home</u></a></th>
+                      <th><a href="file:///C:/Users/User/Desktop/about.html"><u>About us</u></a></th>
+                      <th><a href="file:///C:/Users/User/Desktop/contact.html"><u>Contact us</u></a></th>
+                      <th><a href = "http://127.0.0.1:8000/sign"><u>Sign_up</u></a></th>
+
+                      <th><a href="http://127.0.0.1:8000/log"><u>Log in</u></a></th>
+                      <th><a href="file:///C:/Users/User/Desktop/social.html"><u>Status</u></a></th>
+
+                  </tr>
+              </table>
+            </div>
+        </div>
+
+    <div class="form">
+        <form name="validation" method="POST" action="log">
             {% csrf_token %}
-        First name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="FirstName" placeholder="first name">&nbsp;&nbsp;&nbsp;
-        Last name: <input type="text" name="lastName" placeholder="last name" required><br><br>
-
-            Age:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="age"  placeholder="age"  required><br><br>
-
-        Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="email" name="email" placeholder="rana.bishesh.5@gmail.com" required><br><br>
-
-         Password:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="password" name = 'pass' maxlength="25" minlength="8" required>   <br><br>
-
-         Confirm Password: <input type="password" name="word" maxlength= "25" minlength="8" required><br><br>
+        First name:         <input type="text" name="FirstName" placeholder="first name"><br><br>
+        Last name:          <input type="text" name="lastName" placeholder="last name" required><br><br>
+        Age:                <input type="text" name="age"  placeholder="age"  required><br><br>
+        Email:              <input type="email" name="email" placeholder="rana.bishesh.5@gmail.com" required><br><br>
+        Password:           <input type="password" name = 'pass' maxlength="25" minlength="8" required>   <br><br>
+        Confirm Password:   <input type="password" name="word" maxlength= "25" minlength="8" required><br><br>
 
 
 
-          Gender:<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="sex"  required>male<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="sex" required>female<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="sex"  required>other<br><br>
+          Gender:<br>
+               <input type="radio" name="sex"  required>male<br>
+               <input type="radio" name="sex" required>female<br>
+               <input type="radio" name="sex"  required>other<br><br>
 
 
-       <input type="submit" name="submit" onclick="valid()">
+       <input class="sub" type="submit" name="submit" onclick="valid()">
     </form>
     </div>
     </body>
