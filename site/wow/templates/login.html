@@ -3,11 +3,24 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link
             rel="stylesheet"
             type="text/css"
             href = "{% static 'js/login.css' %}">
 
+        <script>
+            function valid()
+            {
+                var a ==== document.val.emel.value;
+                var b = document.val.pass.value;
+                if(a != b)
+                    {
+                        alert("input name is invalid.");
+                        return false;
+                    }
+            }
+         </script>
     </head>
     <body>
     <nav class="front">
@@ -28,7 +41,7 @@
                       <th><a href = "http://127.0.0.1:8000/sign"><u>Sign_up</u></a></th>
 
                       <th><a href="http://127.0.0.1:8000/log"><u>Log in</u></a></th>
-                      <th><a href="file:///C:/Users/User/Desktop/social.html"><u>Status</u></a></th>
+                      <th><a href="http://127.0.0.1:8000/admin"><u>Admin</u></a></th>
 
                   </tr>
               </table>
@@ -40,9 +53,9 @@
         <form name="val" method="POST" action="dashboard">
              {% csrf_token %}
 
-        Email:<input type="email" name="email" placeholder="rana.bishesh.5@gmail.com" required><br><br>
+        Email:<input type="email" name="emel" placeholder="rana.bishesh.5@gmail.com" required><br><br>
 
-         Password:<input type="password" name = 'pass' maxlength="25" minlength="8" required>   <br><br>
+         Password:<input type="pass" name = 'pass' maxlength="25" minlength="8" required>   <br><br>
 
        <input class="sub" type="submit" name="submit" onclick="valid()">
     </form>
