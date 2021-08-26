@@ -9,18 +9,19 @@
             type="text/css"
             href = "{% static 'js/login.css' %}">
 
-        <script>
+       <!-- <script>
             function valid()
             {
-                var a ==== document.val.emel.value;
+                var a = document.val.emel.value;
                 var b = document.val.pass.value;
-                if(a != b)
+                var c = document.val.submit.value;
+                if(b != a)
                     {
-                        alert("input name is invalid.");
+                        alert(c);
                         return false;
                     }
             }
-         </script>
+         </script> -->
     </head>
     <body>
     <nav class="front">
@@ -55,10 +56,12 @@
 
         Email:<input type="email" name="emel" placeholder="rana.bishesh.5@gmail.com" required><br><br>
 
-         Password:<input type="pass" name = 'pass' maxlength="25" minlength="8" required>   <br><br>
+         Password:<input type="password" name = 'pas' maxlength="25" minlength="4" required>   <br><br>
 
-       <input class="sub" type="submit" name="submit" onclick="valid()">
+       <input class="sub" type="submit" name="submit"  onclick="valid()">
     </form>
     </div>
+
+
     </body>
 </html>

@@ -30,7 +30,12 @@ div.second{
            padding: 0px;
            background-color: bisque;
            }
-
+img{
+    top: 70px;
+    position: fixed;
+    width: 200px;
+    height: 100px;
+    }
 
 table{
       width: 100%;

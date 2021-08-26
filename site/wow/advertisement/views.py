@@ -21,14 +21,25 @@ def log(request):
 
         var = database(name=name, last_name=sur_name, age=age, email=email, password=password)
         var.save()
-    fetch = database.objects.all()
-    emaill = []
-    for i in fetch:
-        emaill.append(i.email)
 
-    return render(request, 'login.html',{'email': emaill})
+
+    return render(request, 'login.html')
 
 def dashboard(request):
-
-    return render(request, 'dashboard.html')
+    fetch = database.objects.all()
+    emaill = []
+    passwordd = []
+    for i in fetch:
+        emaill.append(i.email)
+        passwordd.append(i.password)
+    if request.method == "POST":
+        email = request.POST['emel']
+        password = request.POST['pas']
+    j = 0;
+    for i in emaill:
+        if email == i and password == passwordd[j]:
+            return render(request, 'dashboard.html')
+        j += 1;
+    else:
+        return render(request, 'login.html')
 
