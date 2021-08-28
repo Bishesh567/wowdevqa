@@ -4,40 +4,41 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-        <title>{% block title%}Home page{% endblock title%}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home page</title>
 
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href = "{% static 'js/new.css' %}">
+<link rel = "stylesheet" href = "{% static 'js/home.css'%}"
+
+
 
     </head>
-    <body> 
-    
-        <nav class="front">
-            <h1>MULTI-WEBSITE ADVERTISEMENT AGENT</h1>
-        </nav>
+    <body>
+        <header>
+            <nav class="front">
+                <h1>MULTI-WEBSITE ADVERTISEMENT AGENT</h1>
+            </nav>
 
-        <div>
-            <div class = 'logo'>
-                <img src="{% static 'image/logo.png'%}"  >
+            <div>
+                <div class = 'col-4 logo'>
+                     <img src="{% static 'image/logo.png'%}"  >
+                </div>
+
+                <div class = "col-10 second">
+                  <table>
+                      <tr>
+                          <th><a href="http://127.0.0.1:8000"><u>Home</u></a></th>
+                          <th><a href="file:///C:/Users/User/Desktop/about.html"><u>About us</u></a></th>
+                          <th><a href="file:///C:/Users/User/Desktop/contact.html"><u>Contact us</u></a></th>
+                          <th><a href = "http://127.0.0.1:8000/sign"><u>Sign_up</u></a></th>
+
+                          <th><a href="http://127.0.0.1:8000/log"><u>Log in</u></a></th>
+                          <th><a href="http://127.0.0.1:8000/admin"><u>Admin</u></a></th>
+
+                      </tr>
+                  </table>
+                </div>
             </div>
-
-            <div class="second">
-              <table>
-                  <tr>
-                      <th><a href="http://127.0.0.1:8000"><u>Home</u></a></th>
-                      <th><a href="file:///C:/Users/User/Desktop/about.html"><u>About us</u></a></th>
-                      <th><a href="file:///C:/Users/User/Desktop/contact.html"><u>Contact us</u></a></th>
-                      <th><a href = "http://127.0.0.1:8000/sign"><u>Sign_up</u></a></th>
-
-                      <th><a href="http://127.0.0.1:8000/log"><u>Log in</u></a></th>
-                      <th><a href="http://127.0.0.1:8000/admin"><u>Admin</u></a></th>
-                    
-                  </tr>
-              </table>
-            </div>
-        </div>
+        </header>
 
 
         <div class="para">
@@ -50,6 +51,11 @@
         <div class="pra">
 
         </div>
+
+
+            <div class="footer">my name is bishesh rana</div>
+
+
 
 </body>
 </html>

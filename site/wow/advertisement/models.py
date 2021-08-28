@@ -9,3 +9,6 @@ class database(models.Model):
     password = models.CharField(max_length = 50)
     #gender = models.CharField(max_length = 20)
 
+class File(models.Model):
+    file = models.FileField()
+

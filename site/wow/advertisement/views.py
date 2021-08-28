@@ -1,13 +1,13 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from advertisement.models import database
+from advertisement.models import File
 
 # Create your views here.
 def index(request):
     return render(request, 'home.html')
 
 def sign(request):
-
     return render(request, 'sign.html')
 
 def log(request):
@@ -22,8 +22,10 @@ def log(request):
         var = database(name=name, last_name=sur_name, age=age, email=email, password=password)
         var.save()
 
-
     return render(request, 'login.html')
+
+
+
 
 def dashboard(request):
     fetch = database.objects.all()
@@ -43,3 +45,9 @@ def dashboard(request):
     else:
         return render(request, 'login.html')
 
+def dash(request):
+    if request.method == "POST":
+        data = request.POST['files']
+        fil = File(file = data)
+        fil.save()
+    return render(request, 'dashboard.html')

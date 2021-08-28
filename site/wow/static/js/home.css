@@ -1,3 +1,5 @@
+
+
 body{
     background-image: url("/static/image/sale.jpg");
     background-attachment: fixed;
@@ -6,7 +8,8 @@ body{
     min-height: 100%;
     width: 100px;
     background-size: cover;
-                }
+    }
+
 
 
 .front{
@@ -19,15 +22,13 @@ body{
       text-emphasis-position: above;
        }
 
-
-div.second{
+.second{
            height: 30px;
            position: fixed;
-           right: 0px;
-           width: 60%;
+           width: 50%;
            float: right;
+           right: 0px;
            top: 70px;
-           padding: 0px;
            background-color: bisque;
            }
 
@@ -35,7 +36,14 @@ div.second{
 table{
       width: 100%;
       padding: 5px;
+
       }
+
+
+u:hover{
+        background-color: aqua;
+
+    }
 
 
 div.logo{
@@ -43,16 +51,22 @@ div.logo{
         }
 
 
+img{
+    top: 70px;
+    position: fixed;
+    width: 200px;
+    height: 100px;
+    }
 
 
-    .para{
+.para{
           position: absolute;
           text-align: justify;
           color: green;
           padding: 15px;
           background-color: lightblue;
           top: 250px;
-          width: 500px;
+          width: 40%;
           }
 
 .pra{
@@ -63,4 +77,32 @@ div.logo{
      width: 30%;
      }
 
+.footer{
+       position: absolute;
+          text-align: justify;
+          color: green;
+          padding: 15px;
+          background-color: lightblue;
+          top: 1700px;
+          width: 500px;
+}
 
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 400px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}

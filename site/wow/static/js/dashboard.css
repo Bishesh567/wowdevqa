@@ -50,5 +50,16 @@ img{
     }
 
 
+.dash{
+     background-color: aqua;
+    height: 300px;
+    position:fixed;
+    float: left;
+    padding: 10px;
+    left: 600px;
+    width: 30%;
+    top: 200px;
+
+}
 
 

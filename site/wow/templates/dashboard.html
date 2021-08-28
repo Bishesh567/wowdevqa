@@ -35,7 +35,14 @@
             </div>
         </div>
 
-
+        <div class = "dash">
+            <p>Choose your advertisement file that may be video, picture(banner)</p><br><br><br><br>
+             <form method="POST" action = "dash">
+                  {% csrf_token %}
+                 <input type= "file" name="files" required><br><br>
+                 <input type = "submit">
+             </form>
+        </div>
 
     </body>
 </html>
