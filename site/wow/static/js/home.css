@@ -28,7 +28,7 @@ body{
            width: 50%;
            float: right;
            right: 0px;
-           top: 70px;
+           top: 90px;
            background-color: bisque;
            }
 
@@ -48,13 +48,14 @@ u:hover{
 
 div.logo{
         float: left;
+
         }
 
 
 img{
     top: 70px;
     position: fixed;
-    width: 200px;
+    width: 10%;
     height: 100px;
     }
 
